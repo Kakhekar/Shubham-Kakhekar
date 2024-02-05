@@ -1,0 +1,72 @@
+<!--
+  EYE FREE MODEL 3D BY Oscar creativo by OSCAR CREATIVO is licensed under Creative Commons Attribution.
+  Juvenile Teratophoneus curriei byrankinstudio is licensed under Creative Commons Attribution.
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>A simple Three.JS App</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- language cdn EXO 2 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap" rel="stylesheet">
+  <!-- bootstrap ICON CDN  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script> -->
+
+  <script src="../node_modules/gsap/dist/gsap.min.js"></script>
+  <script src="../node_modules/gsap/dist/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+
+  <!-- three js canvas  -->
+  <div class="canvas-container">
+    <canvas class="ThreeJSstructures"></canvas>
+  </div>
+
+  <!-- side nav bar  -->
+  <div class="navbar">
+    <div class="top-content">Top Content</div>
+
+    <div class="menu">
+      <div class="menu-item" id="homeMenu">Home</div>
+      <div class="menu-item" id="aboutMenu">About</div>
+      <div class="menu-item" id="serviceMenu">Services</div>
+      <div class="menu-item" id="contactMenu">Contact</div>
+    </div>
+
+    <div class="bottom-content">
+      <div class="social-icons">
+        <ul>
+          <li><a href="#"><i class="bi bi-github"></i></a></li>
+          <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+          <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- cursor design  -->
+  <div class="custom-cursor" id="stickCursor">
+    <div class="stick-cursor stick-cursor-parts"></div>
+    <div class="cursor-head ">
+
+      <div class="cursor-hands">
+        <div class="stick-left-hand stick-cursor-parts"></div>
+        <div class="stick-right-hand stick-cursor-parts"></div>
+      </div>
+      <div class="cursor-legs">
+        <div class="stick-left-leg stick-cursor-parts"></div>
+        <div class="stick-right-leg stick-cursor-parts"></div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="js/main.js"></script>
+  <script src="./js/custom.js"></script>
+</body>
+
+</html>

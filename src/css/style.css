@@ -1,0 +1,199 @@
+/* body {
+  margin: 0;
+  font-family: 'Exo 2', sans-serif;
+  background-color: #000;
+} */
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Exo 2', sans-serif;
+  background-color: #000;
+}
+
+header {
+  margin-top: 3em;
+  text-align: center;
+  color: white;
+}
+
+header h1 {
+  font-size: 2em;
+  font-weight: 900;
+}
+
+#container3D canvas {
+  width: 100vw !important;
+  height: 100vh !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-weight: bold;
+  z-index: 1001;
+  /* Ensure it's above the canvas */
+}
+
+/* Rest of your existing CSS remains unchanged */
+
+
+.top-content,
+.bottom-content {
+  color: #fff;
+  padding: 5px;
+  font-size: 20px;
+  /* Adjust font size as needed */
+  writing-mode: vertical-rl;
+  /* Rotate text 90 degrees clockwise */
+  transform: rotate(180deg);
+  /* Flip text upside down */
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.menu-item {
+  margin: 5px;
+  padding: 5px;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s ease;
+  font-size: 12px;
+  /* Adjust font size as needed */
+  writing-mode: vertical-rl;
+  /* Rotate text 90 degrees clockwise */
+  transform: rotate(180deg);
+  /* Flip text upside down */
+}
+
+.menu-item:hover {
+  transform: scale(1.4);
+}
+
+.menu-item::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  background-color: #333;
+  border-radius: 50%;
+  opacity: 0;
+  transition: width 0.3s ease, height 0.3s ease, opacity 0.3s ease;
+}
+
+.menu-item:hover::before {
+  width: 50px;
+  height: 50px;
+  opacity: 0.6;
+  position: absolute;
+
+  background-color: transparent;
+  /* Make the background transparent */
+  border: 2px solid #ffffff;
+  /* Add a border to create a ring */
+  border-radius: 50%;
+  transition: transform 0.1s ease-out;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .menu {
+    flex-direction: row;
+  }
+
+  .menu-item {
+    writing-mode: horizontal-tb;
+    transform: none;
+  }
+
+  .menu-item:hover {
+    transform: scale(1);
+  }
+
+  .menu-item::before {
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+
+  .menu-item:hover::before {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+
+  .top-content,
+  .bottom-content {
+    writing-mode: horizontal-tb;
+    transform: none;
+  }
+}
+
+/* Add this CSS to your existing stylesheet */
+.social-icons ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icons li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+  transform: rotate(180deg);
+  /* Rotate each icon 180 degrees */
+}
+
+.social-icons a {
+  color: #fff;
+  /* Set the color for the anchor text */
+  text-decoration: none;
+  /* Remove underline from the anchor text */
+}
+
+@media only screen and (max-width: 600px) {
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-icons li {
+    transform: none;
+    /* Remove rotation on smaller screens */
+  }
+}

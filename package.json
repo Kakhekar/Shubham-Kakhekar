@@ -1,0 +1,26 @@
+{
+  "name": "web3",
+  "version": "1.0.0",
+  "description": "This is the supporting code for [this video](https://youtu.be/lGokKxJ8D2c)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kakhekar/portfolio3d.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kakhekar/portfolio3d/issues"
+  },
+  "homepage": "https://github.com/Kakhekar/portfolio3d#readme",
+  "dependencies": {
+    "@tweenjs/tween.js": "^23.1.1",
+    "dat.gui": "^0.7.9",
+    "gsap": "^3.12.5",
+    "three": "^0.161.0"
+  }
+}

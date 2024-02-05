@@ -1,0 +1,11 @@
+Model Information:
+* title:	Bgmi Female Character
+* source:	https://sketchfab.com/3d-models/bgmi-female-character-29c8842a298845e3926a2943f3a69bb5
+* author:	Bayaar (https://sketchfab.com/korneliushansda)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Bgmi Female Character" (https://sketchfab.com/3d-models/bgmi-female-character-29c8842a298845e3926a2943f3a69bb5) by Bayaar (https://sketchfab.com/korneliushansda) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
